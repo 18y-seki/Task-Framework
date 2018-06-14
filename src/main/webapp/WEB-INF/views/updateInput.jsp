@@ -40,9 +40,7 @@
 			</div>
 		</fieldset>
 		<div>
-			<input type="submit" name="button" value="確認">
-		</div>
-		<div>
+			<form:button>確認</form:button>
 			<form:button onclick="location.href='update'; return false;">戻る</form:button>
 		</div>
 	</form:form>
