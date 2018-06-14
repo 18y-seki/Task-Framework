@@ -48,6 +48,13 @@ public class UpdateController {
 
 	}
 
+	@RequestMapping(value="/updateInput", method =RequestMethod.GET)
+	public String backInput(@ModelAttribute("form") UpdateForm form, Model model, HttpSession session) {
+
+		return "updateInput";
+	}
+
+
 	@RequestMapping(value="/updateInput", method =RequestMethod.POST)
 	public String updateInput(@ModelAttribute("form") UpdateForm form, Model model, HttpSession session) {
 		String newName = form.getName();
