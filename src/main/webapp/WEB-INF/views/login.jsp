@@ -12,16 +12,20 @@
 <body>
 	<p>${msg}</p>
 	<form:form action="login" modelAttribute="form">
-		<p>
-			<label>ID</label>
-			<form:input path="id" />
-		</p>
-		<p>
-			<label>PASS</label>
-			<form:password path="pass" />
-		</p>
+		<fieldset>
+			<div>
+				<label>ID</label>
+				<form:input path="id" />
+			</div>
+			<div>
+				<label>PASS</label>
+				<form:password path="pass" />
+			</div>
+		</fieldset>
 		<form:button>ログイン</form:button>
 	</form:form>
-
+<div>
+  <a href="index">TOP画面へ</a>
+</div>
 </body>
 </html>

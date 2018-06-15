@@ -38,11 +38,13 @@ input:read-only {
   text-align: center;
 }
 
+.message{
+	color: red;
+}
+
 .required::before {
   content: "※";
   color: red;
 }
 
-.massege{
-	color: red;
-}
+
